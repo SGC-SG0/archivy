@@ -17,7 +17,7 @@ jobs:
       - name: Checkout files from repository
         uses: actions/checkout@v2
         with:
-          repository: sgc003y/archivy
+          repository: sgc-sg0/archivy
 
       - name: Setting variables
         if: success()
