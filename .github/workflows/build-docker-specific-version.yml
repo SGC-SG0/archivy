@@ -16,15 +16,15 @@ jobs:
       - name: Checkout files from repository
         uses: actions/checkout@v2
         with:
-          repository: archivy/archivy-docker
+          repository: sgc003y/archivy-docker
 
       - name: Setting variables
         if: success()
         run: |
           date -u +'%Y-%m-%dT%H:%M:%SZ' > TIMESTAMP
           echo "${{ github.event.inputs.version }}" > VERSION
-          echo "uzayg" > DOCKER_USERNAME
-          echo "docker.io/uzayg/archivy" > DOCKER_IMAGE
+          echo "sgc003y" > DOCKER_USERNAME
+          echo "docker.io/sgc003y/archivy" > DOCKER_IMAGE
 
       - name: Set up Docker Buildx
         if: success()
