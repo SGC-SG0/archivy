@@ -20,7 +20,7 @@ jobs:
         python -m pip install --user --upgrade setuptools wheel
     - name: Build a binary wheel and source tarball
       run: >-
-          python setup.py sdist bdist_wheel
+          python3 setup.py sdist bdist_wheel
 #    - name: Publish distribution 📦 to PyPI
 #      uses: pypa/gh-action-pypi-publish@master
 #      with:
