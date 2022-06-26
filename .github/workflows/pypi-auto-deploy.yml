@@ -26,10 +26,10 @@ jobs:
 #      with:
 #        user: __token__
 #        password: ${{ secrets.pypi_password }}
-#    - name: Upload to release
-#      uses: marvinpinto/action-automatic-releases@latest
-#      with:
-#          repo_token: ${{ secrets.RELEASE_TOKEN }}
-#          prerelease: false
-#          draft: true
-#          files: dist/*
+    - name: Upload to release
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+          repo_token: ${{ secrets.RELEASE_TOKEN }}
+          prerelease: false
+          draft: true
+          files: dist/*
